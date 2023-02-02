@@ -30,13 +30,9 @@
     color: $text-color;
   }
 
-  &__block {
-    display: flex;
-    align-items: center;
-  }
-
   &__list {
     display: flex;
+    margin-left: auto;
   }
 
   &__list-item {
@@ -44,10 +40,6 @@
     @media screen and (max-width: 536px) {
       margin-right: 29px;
     }
-  }
-
-  &__list-item:last-child {
-    margin-right: 0;
   }
 
   &__list-link {
@@ -169,6 +161,9 @@
       order: 3;
       margin-top: 20px;
     }
+    &__list-item:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -214,8 +209,6 @@
       transform: translate(-50%, 0);
       background: #333333;
       width: 292px;
-      overflow: scroll;
-      height: 325px;
     }
 
     &__list-item {
@@ -250,10 +243,6 @@
     &__list-link {
       @include text(26px, 400, $text-color, 26px, "Montserrat")
     }
-
-    //&__list-link:focus {
-    //  color: $def-color;
-    //}
 
     &__title {
       display: none;
@@ -322,4 +311,3 @@
     display: block;
   }
 }
-
