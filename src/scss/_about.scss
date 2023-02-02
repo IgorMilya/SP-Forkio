@@ -49,6 +49,7 @@
 
     max-width: 360px;
     margin: 0 auto 70px auto;
+
     @media screen and (max-width: 992px) {
       margin-bottom: 98px;
 
@@ -58,6 +59,16 @@
       margin-bottom: 88px;
 
     }
+  }
+
+  &__btn-list li {
+    @media (min-width: 320px) and (max-width: 480px) {
+      &:last-child {
+        margin-top: 15px;
+      }
+
+    }
+
   }
 }
 
@@ -77,14 +88,15 @@
     cursor: pointer;
     &:hover {
       background: #e6e6e6;
-
     }
+
   }
 
   &__item a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
   }
 }
 .item {
@@ -118,14 +130,4 @@
     //right: 0;
     padding: 0 5px;
   }
-}
-.octicon {
-}
-.octicon-eye {
-}
-.octicon-star {
-}
-.d-inline-block {
-}
-.mr-2 {
 }
