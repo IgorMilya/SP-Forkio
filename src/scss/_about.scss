@@ -1,0 +1,102 @@
+
+.about {
+  // .about__title
+
+  &__title {
+    text-align: center;
+    @include text(54px, 700, $title-color, 54px, 'Montserrat');
+    margin-bottom: 35px;
+    text-transform: uppercase;
+  }
+
+  // .about__subtitle
+
+  &__subtitle {
+    display: block;
+    max-width: 861px;
+    text-align: center;
+
+    @include text(21px, 400, #323232, 32px, 'Lato');
+    margin: 0 auto 13px auto;
+  }
+
+  // .about__btn-list
+
+  &__btn-list {
+    display: flex;
+    gap: 10px;
+    max-width: 360px;
+    justify-content: center;
+
+    margin: 0 auto 70px auto;
+  }
+}
+
+
+.btn-list {
+
+  // .btn-list__item
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #d1d0d0;
+    background: #F4F4F4;
+    height: 26px;
+    width: 112px;
+    cursor: pointer;
+    &:hover {
+      background: #e6e6e6;
+
+    }
+  }
+
+  &__item a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.item {
+
+  // .item__icon
+
+  &__icon {
+    padding: 0 3px;
+    display: flex;
+    align-items: center;
+  }
+
+  // .item__text
+
+  &__text {
+    @include text(12px, 700, #323232, 26px, "Montserrat");
+    display: inline-flex;
+
+
+  }
+
+  // .item__counter
+
+  &__counter {
+    @include text(12px, 700, #323232, 26px, "Montserrat");
+    background: #FFFFFF;
+    text-align: center;
+    width: max-content;
+    border-left: 1px solid #d1d0d0;
+    //position: absolute;
+    //right: 0;
+    padding: 0 5px;
+  }
+}
+.octicon {
+}
+.octicon-eye {
+}
+.octicon-star {
+}
+.d-inline-block {
+}
+.mr-2 {
+}
