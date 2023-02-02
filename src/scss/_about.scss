@@ -7,6 +7,16 @@
     @include text(54px, 700, $title-color, 54px, 'Montserrat');
     margin-bottom: 35px;
     text-transform: uppercase;
+    @media screen and (max-width: 992px) {
+      @include text(42px, 700, $title-color, 42px, 'Montserrat');
+      margin-bottom: 33px;
+
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      @include text(26px, 700, $title-color, 28px, 'Montserrat');
+      margin-bottom: 27px;
+
+    }
   }
 
   // .about__subtitle
@@ -18,17 +28,36 @@
 
     @include text(21px, 400, #323232, 32px, 'Lato');
     margin: 0 auto 13px auto;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 24px;
+
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      @include text(14px, 400, #323232, 20px, 'Lato');
+      margin-bottom: 36px;
+
+    }
   }
 
   // .about__btn-list
 
   &__btn-list {
     display: flex;
-    gap: 10px;
-    max-width: 360px;
     justify-content: center;
+    gap: 10px;
 
+    max-width: 360px;
     margin: 0 auto 70px auto;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 98px;
+
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      flex-wrap: wrap;
+      margin-bottom: 88px;
+
+    }
   }
 }
 
