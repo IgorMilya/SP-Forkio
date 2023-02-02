@@ -32,27 +32,50 @@
   &__subtext {
     @include text($description-size, 400, #A291A5, 21px, "Lato");
     text-align: center;
-    //max-width: 887px;
   }
 }
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
   .feedback {
-    padding-top: 89px;
+    padding-top: 86px;
 
     &__title {
       font-size: 42px;
       line-height: 44px;
       margin-bottom: 85px;
     }
-    &__list {
 
-      gap: 115px 0;
+    &__list {
+      justify-content: space-around;
+      gap: 54px 0;
       margin-bottom: 115px;
     }
 
     &__list-item {
-      width: 27.5%;
-      text-align: center;
+      width: 33.5%;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .feedback {
+    padding-top: 57px;
+    padding-bottom: 22px;
+
+    &__title {
+      font-size: 36px;
+      line-height: 48px;
+      margin-bottom: 53px;
+    }
+
+    &__list {
+      justify-content: space-around;
+      gap: 45px 0;
+      margin-bottom: 115px;
+    }
+
+    &__list-item {
+      width: 100%;
     }
   }
 }
