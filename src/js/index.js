@@ -1,6 +1,6 @@
 let menu = document.querySelector(".navbar__menu");
 let icon = document.querySelector(".navbar__menu-line");
-let list = document.querySelector(".navbar__list");
+const list = document.querySelector(".navbar__list");
 
 const removeToken = () => {
     icon.classList.replace("navbar__menu-cross", "navbar__menu-line");
