@@ -1,0 +1,137 @@
+.services {
+
+   // .services__title
+
+   &__title {
+   }
+
+   // .services__list
+
+   &__list {
+   }
+
+   // .services__img-wrapper
+
+   &__img-wrapper {
+   }
+
+   // .services__img
+
+   &__img {
+   }
+}
+
+
+
+.services .container {
+   
+}
+
+
+
+
+
+
+ .services {
+
+    background: #F4F4F4;
+    // .services__title-wrapper
+
+    &__title-wrapper {
+       margin-top: 95px;
+       width: 700px;
+       margin-bottom: 33px;
+
+    }
+
+
+    // .services__title
+
+    &__title {
+       @include text(48px, 700, $def-color, 50px, 'Montserrat');
+       margin-bottom: 40px;
+       @media screen and (max-width: 1065px) {
+          @include text(42px, 700, $def-color, 44px, 'Montserrat');
+          margin-bottom: 100px;
+       }
+       @media screen and (max-width: 1050px) {
+          margin-bottom: 50px;
+       }
+    }
+    &__img {
+       position: relative;
+       right: -10px;
+
+       width: 100%;
+       @media screen and (max-width: 1050px) {
+          position: absolute;
+          width: 700px;
+          height: 520px;
+
+       }
+    }
+
+    // .services__list
+
+    &__list {
+       margin-top: 98px;
+       margin-bottom: 72px;
+    }
+ }
+ .services .container {
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    @media screen and (max-width: 1050px) {
+       flex-direction: column;
+    }
+
+ }
+ .list {
+
+    // .list__item
+
+    &__item {
+       display: flex;
+       gap: 23px;
+
+    }
+ }
+ .item {
+    // .item__img
+
+    &__img {
+       height: 110px;
+       min-width: 110px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+    }
+    &__img img {
+       height: 50%;
+       min-width: 50%;
+       object-fit: cover;
+    }
+
+    // .item__content
+
+    &__content {
+       max-width: 406px;
+    }
+
+    // .item__title
+
+    &__title {
+       @include text(16px, 400, #323232, 21px, 'Montserrat');
+       margin-bottom: 17px;
+    }
+
+    // .item__text
+
+    &__text {
+       @include text(14px, 400, $sub-title, 21px, 'Montserrat');
+       margin-bottom: 35px;
+    }
+ }
