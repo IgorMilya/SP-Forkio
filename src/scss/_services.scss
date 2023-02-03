@@ -5,9 +5,23 @@
    // .services__title
    &__title {
       @include text(48px, 700, $def-color, 50px, 'Montserrat');
-      position: relative;
-      right: -10px;
       order: 2;
+
+
+      @media screen and (max-width: 1190px) {
+         @include text(39px, 700, $def-color, 38px, 'Montserrat');
+
+      }
+      @media screen and (max-width: 990px) {
+         order: 1;
+         margin-bottom: 50px;
+
+      }
+      @media (min-width: 320px) and (max-width: 490px) {
+         @include text(32px, 700, $def-color, 38px, 'Montserrat');
+         margin-bottom: 36px;
+         text-align: center;
+      }
    }
 
    // .services__list
@@ -15,13 +29,39 @@
       order: 1;
       grid-row-start: 1;
       grid-row-end: 3;
+      @media screen and (max-width: 990px) {
+         order: 2;
+      }
+
+   }
+   &__list li {
+      @media screen and (max-width: 990px) {
+         margin-bottom: 60px;
+      }
+      @media (min-width: 320px) and (max-width: 490px) {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 38px;
+
+      }
    }
 
    // .services__img
    &__img {
+      display: flex;
+      align-items: end;
       position: relative;
       right: -10px;
       order: 3;
+      @media screen and (max-width: 990px) {
+         width: 100%;
+         display: flex;
+         align-items: end;
+         position: relative;
+         right: -34px;
+      }
    }
    &__img img {
       width: 100%;
@@ -34,30 +74,46 @@
    // .list__item
    &__item {
       display: flex;
+      gap: 23px;
+
    }
 }
 .item {
    &__img {
-      //width: 115px;
+      width: 20%;
       display: flex;
       justify-content: center;
-      align-items: start;
-      width: 30%;
+      align-items: center;
    }
    &__img img {
+
+
    }
    &__content {
+      width: 80%;
+      @media (min-width: 320px) and (max-width: 490px) {
+         width: 100%;
+         text-align: center;
+
+      }
    }
 }
 .content {
    &__title {
       @include text(16px, 400, #323232, 21px, 'Montserrat');
       margin-bottom: 17px;
+      @media screen and (max-width: 990px) {
+         margin-bottom: 2px;
+
+      }
    }
    &__text {
       @include text(14px, 400, $sub-title, 21px, 'Montserrat');
       margin-bottom: 35px;
+      @media (min-width: 320px) and (max-width: 490px) {
+         margin-bottom: 0;
 
+      }
    }
 }
 
@@ -65,9 +121,16 @@
 .services .container {
    padding-top: 95px;
    display: grid;
-   grid-template-columns: 50% 50%;
-   column-gap: 20px;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 10px;
+   justify-content: center;
+   @media screen and (max-width: 990px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
+   }
 }
 
 
