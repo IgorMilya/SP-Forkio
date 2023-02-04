@@ -2,7 +2,6 @@
 .services {
    background: #F4F4F4;
 
-   // .services__title
    &__title {
       @include text(48px, 700, $def-color, 50px, 'Montserrat');
       order: 2;
@@ -12,7 +11,7 @@
          @include text(39px, 700, $def-color, 38px, 'Montserrat');
 
       }
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 992px) {
          order: 1;
          margin-bottom: 50px;
 
@@ -24,18 +23,17 @@
       }
    }
 
-   // .services__list
    &__list {
       order: 1;
       grid-row-start: 1;
       grid-row-end: 3;
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 992px) {
          order: 2;
       }
 
    }
    &__list li {
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 992px) {
          margin-bottom: 60px;
       }
       @media (min-width: 320px) and (max-width: 490px) {
@@ -48,19 +46,18 @@
       }
    }
 
-   // .services__img
    &__img {
       display: flex;
       align-items: end;
       position: relative;
       right: -10px;
       order: 3;
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 992px) {
          width: 100%;
          display: flex;
          align-items: end;
          position: relative;
-         right: -34px;
+         right: -10px;
       }
    }
    &__img img {
@@ -71,7 +68,6 @@
 }
 
 .list {
-   // .list__item
    &__item {
       display: flex;
       gap: 23px;
@@ -102,7 +98,7 @@
    &__title {
       @include text(16px, 400, #323232, 21px, 'Montserrat');
       margin-bottom: 17px;
-      @media screen and (max-width: 990px) {
+      @media screen and (max-width: 992px) {
          margin-bottom: 2px;
 
       }
@@ -110,7 +106,7 @@
    &__text {
       @include text(14px, 400, $sub-title, 21px, 'Montserrat');
       margin-bottom: 35px;
-      @media (min-width: 320px) and (max-width: 490px) {
+      @media (min-width: 320px) and (max-width: 480px) {
          margin-bottom: 0;
 
       }
@@ -124,7 +120,7 @@
    grid-template-columns: 1fr 1fr;
    column-gap: 10px;
    justify-content: center;
-   @media screen and (max-width: 990px) {
+   @media screen and (max-width: 992px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
