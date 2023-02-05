@@ -103,6 +103,7 @@
 
   &__subtext {
     @include text($def-size, 400, $sub-title, 16px, "Montserrat");
+    text-transform: uppercase;
   }
 
   &__btn {
