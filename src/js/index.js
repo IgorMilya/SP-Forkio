@@ -17,7 +17,7 @@ menu.addEventListener("touchstart", () => {
 })
 
 document.addEventListener("touchstart", e => {
-    if (!e.composedPath().includes(list) && !e.composedPath().includes(menu)) {
-        removeToken()
-    }
+    if (e.composedPath().includes(list) || e.composedPath().includes(menu)) return;
+    removeToken()
+
 })

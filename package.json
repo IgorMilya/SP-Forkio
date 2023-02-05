@@ -1,14 +1,22 @@
 {
-  "name": "classworkgulp",
+  "name": "step-im_ik",
   "version": "1.0.0",
-  "description": "",
+  "description": "This work was done by Ihor M and Ihor K",
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp dev",
     "pro": "gulp build"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/imilay11/sp-forkio/-/tree/main"
+  },
+  "author": "Ihor Milevskyi and Ihor Kacher",
   "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/imilay11/sp-forkio/-/issues"
+  },
+  "homepage": "https://gitlab.com/imilay11/sp-forkio",
   "devDependencies": {
     "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
