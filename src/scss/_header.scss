@@ -14,10 +14,19 @@
     background: url("../../dist/img/icon/pen.svg");
     width: 43px;
     height: 41px;
+    position: relative;
   }
 
-  &__logo:hover &__icon {
+  &__hover-icon {
     background: url("../../dist/img/icon/pen-hover.svg");
+    width: 43px;
+    height: 41px;
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__logo:hover &__hover-icon {
+    opacity: 1;
   }
 
   &__title {
@@ -98,7 +107,7 @@
 
   &__btn {
     position: absolute;
-    bottom: -41px;
+    bottom: -36px;
     left: 50%;
     transform: translate(-50%, 0);
     @include text(21px, 700, $text-color, 22px, "Montserrat");
@@ -118,7 +127,7 @@
 
   &__sub-btn {
     position: absolute;
-    bottom: -75px;
+    bottom: -70px;
     left: 50%;
     transform: translate(-50%, 0);
     @include text($description-size, 400, $sub-title, 15px, "Montserrat");
