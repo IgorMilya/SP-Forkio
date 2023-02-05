@@ -2,10 +2,7 @@
 .pricing {
 
   background: url("../../dist/img/pricingbgi.jpg") no-repeat center;
-
   background-size: cover;
-  height: 100%;
-  width: 100%;
   padding-bottom: 97px;
   @media (min-width: 320px) and (max-width: 480px) {
     padding-bottom: 10px;
@@ -58,6 +55,7 @@
   }
   &__item {
     width: 22%;
+    min-width: 210px;
     @media screen and (max-width: 992px) {
       width: 35%;
     }
